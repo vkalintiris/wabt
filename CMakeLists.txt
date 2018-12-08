@@ -28,6 +28,8 @@ option(CODE_COVERAGE "Build with code coverage enabled" OFF)
 option(WITH_EXCEPTIONS "Build with exceptions enabled" OFF)
 option(WERROR "Build with warnings as errors" OFF)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
+
 if (${CMAKE_C_COMPILER_ID} STREQUAL "Clang")
   set(COMPILER_IS_CLANG 1)
   set(COMPILER_IS_GNU 0)
